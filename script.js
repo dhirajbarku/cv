@@ -93,6 +93,7 @@ form.addEventListener("submit", function (e) {
   const fullName = document.querySelector("#firstname");
   const email = document.querySelector("#email");
   const message = document.querySelector("#message");
+  const outcome = document.querySelector(".outcome");
 
   // select error
   const nameError = document.querySelector(".name-error");
@@ -131,4 +132,9 @@ form.addEventListener("submit", function (e) {
   }
 
   apiWork(fullName.value, email.value, message.value);
+
+  fullName.value = "";
+  email.value = "";
+  message.value = "";
+  outcome.innerHTML = "Form is submitted thank you 😀😀😀";
 });

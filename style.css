@@ -3004,7 +3004,12 @@ textarea:focus ~ .placeholder {
   margin: 0;
 }
 
-. @media only screen and (max-width: 665px) {
+.outcome {
+  color: white;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 665px) {
   .form {
     width: 98%;
   }
